@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans';
+}
+
+.container-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222121;
+    padding-top: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 2rem;
+
+}
+
+.navbar-list {
+    display: flex;
+    gap: 2rem;
+    font-family: 'Abril Fatface';
+}
+
+.navbar-list li {
+    list-style: none;
+    color: #D1A475;
+    font-weight: 500;
+}
+
+.navbar-button {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    color: #D1A475;
+
+}
+
+.navbar-logo {
+    color: #D1A475;
+}
+
+.navbar-button p {
+    color: #D1A475;
+    font-weight: 500;
+}
+
+.button-login {
+    background-color: #D5924E;
+    padding-left: 13px;
+    padding-right: 13px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border-radius: 6px;
+}
+
+.button-login p {
+    background-color: #D5924E;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.button-login a {
+    text-decoration: none;
+}
+
+.Hero {
+    display: flex;
+    align-items: center;
+}
+
+.main {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.7) 17.42%, rgba(0, 0, 0, 0) 100%), url(../../Asset/Main-Header\ 1.svg), #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    padding: 196px 989px 177.83px 50px;
+}
+
+.main-header {
+    display: flex;
+    gap: 6px;
+    width: 400px;
+    height: 50px;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 45px;
+    color: white;
+}
+
+.main-button a {
+    display: flex;
+    border: 2px solid #D5924E;
+    width: 167px;
+    height: 48px;
+}
+
+.main-button a {
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-button h2 {
+    color: #D5924E;
+}
+
+.main-line p {
+    margin-top: 6px;
+    margin-bottom: 38px;
+    width: 450px;
+    border: 2px solid #FFFFFF;
+}
+
+.desc-header {
+    display: flex;
+    flex-direction: column;
+    background-color: #222121;
+    font-family: 'Abril Fatface';
+    color: #D1A475;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding-top: 78.17px;
+}
+
+.desc-header img {
+    padding-top: 31.5px;
+    width: 192px;
+    height: 16px;
+}
+
+.desc-header h2{
+    font-weight: 400;
+    font-size: 26px;
+}
+
+.desc-body {
+    display: grid;
+}
+
+.desc-body h2 {
+    font-family: 'EB Garamond';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    background-color: #222121;
+    padding: 36px 387px 0 387px;
+    color: #FFFFFF;
+}
+
+.desc-satisfactory {
+    background-color: #222121;
+    display: flex;
+    justify-content: center;
+    padding: 29px 0 97px 0;
+}
+
+.desc-section {
+    font-family: 'Abril Fatface';
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-rows: repeat(1, minmax(0, 1fr));
+    justify-items: center;
+    gap: 108px;
+}
+
+.desc-grid1 h2 {
+    font-size: 80px;
+    font-weight: 400;
+}
+
+.desc-grid1 p {
+    width: 110px;
+    height: 54px;    
+}
+
+.desc-grid2 h2 {
+    font-size: 80px;
+    font-weight: 400;
+
+}
+
+.desc-grid2 p {
+    width: 110px;
+    height: 54px;    
+}
+
+.desc-grid3 h2 {
+    font-size: 80px;
+    font-weight: 400;
+}
+
+.desc-grid3 p {
+    width: 110px;
+    height: 54px;    
+}
+
+.desc-booking{
+    background-color: #222121;
+}
+
+.booking-flow{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.booking-flow img{
+    padding: 215px 0 0 0;
+}
+
+.booking-desc{
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    justify-content: space-evenly;
+    justify-items: end;
+    text-align: center;
+    padding: 10px 30px 0 30px;
+}
+
+.booking-desc h2{
+    color: #D5924E;
+    width: 149px;
+    height: 54px;
+    font-family: 'Abril Fatface';
+    font-weight: 400;
+    font-size: 20px;
+}

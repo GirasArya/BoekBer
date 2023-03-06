@@ -1,0 +1,36 @@
+
+.container-navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 2rem;
+    background-color: white;
+}
+
+.navbar-list{
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar-list li{
+    list-style: none;
+    color: #D1A475;
+    font-weight: 500;
+}
+
+.navbar-button{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.navbar-logo {
+    color : #D1A475;
+}
+.navbar-button p{
+    color: #D1A475;
+    font-weight: 500;
+}
