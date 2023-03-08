@@ -21,11 +21,20 @@
     font-weight: 500;
 }
 
+.navbar-list a{
+    text-decoration: none;
+}
+
 .navbar-button{
     display: flex;
     gap: 2rem;
     align-items: center;
 }
+
+.navbar-button a{
+    text-decoration: none;
+}
+
 
 .navbar-logo {
     color : #D1A475;
