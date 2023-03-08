@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+Footer {
+    background-color: #222121;
+    box-shadow: 0px -2px 4px rgba(255, 255, 255, 0.1);
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-container-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 25px 0 0 79px;
+}
+
+.footer-header h2 {
+    color: #D1A475;
+    font-family: 'Abril Fatface';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 80px;
+}
+
+.footer-social {
+    display: flex;
+    gap: 40px;
+    padding: 20px 0 0 0;
+}
+
+
+.footer-social i {
+    color: white;
+    width: 24px;
+    height: 24px;
+}
+
+.footer-address p {
+    font-family: 'Abril Fatface';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    padding: 86px 0 0 0;
+    color: #FFFFFF;
+}
+
+.footer-container-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 52px 81px 0 0;
+}
+
+.footer-container-right h2 {
+    color: #FFFFFF;
+    font-family: 'Abril Fatface';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.input-email input {
+    font-family: 'EB Garamond';
+    color: #FFFFFF;
+    width: 499px;
+    height: 46px;
+    background-color: transparent;
+    margin: 17px 0 0 0;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.input-email ::placeholder {
+    color: #FFFFFF;
+    padding-left: 21px;
+}
+
+.input-message input {
+    font-family: 'EB Garamond';
+    color: #FFFFFF;
+    width: 499px;
+    height: 117px;
+    background-color: transparent;
+    margin: 17px 0 0 0;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.input-message ::placeholder {
+    color: #FFFFFF;
+    padding-left: 21px;
+}
+
+.footer-copyright {
+    display: flex;
+    justify-content: center;
+    padding: 60px 0 0 0;
+}
+
+.footer-copyright p {
+    color: #FFFFFF;
+    font-family: 'EB Garamond';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    padding-bottom: 28px;
+}
