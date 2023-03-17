@@ -22,13 +22,17 @@ body {
 .navbar-list {
     display: flex;
     gap: 2rem;
-    font-family: 'Abril Fatface';
 }
 
 .navbar-list li {
     list-style: none;
     color: #D1A475;
     font-weight: 500;
+    font-family: 'Abril Fatface';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
 }
 
 .navbar-list a {
@@ -43,7 +47,7 @@ body {
 
 }
 
-.navbar-button a{
+.navbar-button a {
     text-decoration: none;
 }
 
