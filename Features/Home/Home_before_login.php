@@ -21,25 +21,25 @@
       <img src="./../../Asset/Navbar Logo.svg" alt="Boekber">
     </div>
     <div class="navbar-list">
-      <a href="#">
+      <a href="Home_before_login.php">
         <li>Home</li>
       </a>
       <a href="#">
         <li>Book</li>
       </a>
-      <a href="#">
+      <a href="About.php">
         <li>About</li>
       </a>
-      <a href="#">
+      <a href="Profile.php">
         <li>Profile</li>
       </a>
     </div>
     <div class="navbar-button">
-      <a href="#">
+      <a href="./../Register/Register.php">
         <p>Register</p>
       </a>
       <div class="button-login">
-        <a href="#">
+        <a href="./../Login/Login.php">
           <p>Log In</p>
         </a>
       </div>
