@@ -1,11 +1,14 @@
 <?php
 session_start();
 include("../../Component/Configuration/configuration.php");
-if(!isset($_SESSION['username']))
-{
-    header("Location: ./Features/Login/Login.php"); //tempat login nanti
+if (!isset($_SESSION['Username'])) {
+  header("Location: ../../Features/Login/Login.php");
 }
+
+$iduser = $_SESSION["id"];
+$QueryID = mysqli_query($con, "SELECT * FROM user WHERE id = '$iduser'");
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -42,17 +45,17 @@ if(!isset($_SESSION['username']))
         <li>Profile</li>
       </a>
     </div>
-    <!-- <div class="navbar-button">
-      <a href="#">
-        <p>Register</p>
-      </a>
-      <div class="button-login">
-        <a href="#">
-          <p>Log In</p>
-        </a>
-      </div> -->
+    
+    <div class="navbar-profile">
+      <img src="../../Asset//User Icon.svg" alt="Icon">
+      <?php
+      while ($baris = mysqli_fetch_array($QueryID)) {
+        echo "<h2> $baris[Username]</h2>";
+      }
+      ?>
     </div>
   </div>
+
 
   <!-- Hero / Main -->
   <main>

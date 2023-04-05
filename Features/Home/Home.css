@@ -19,6 +19,21 @@ body {
 
 }
 
+.navbar-profile {
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar-profile h2 {
+    padding-left: 14px;
+    font-family: 'Abril Fatface';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: white;
+}
+
 .navbar-list {
     display: flex;
     gap: 2rem;
@@ -112,12 +127,15 @@ body {
     border: 2px solid #D5924E;
     width: 167px;
     height: 48px;
-}
-
-.main-button a {
     text-decoration: none;
     align-items: center;
     justify-content: center;
+    transition: .5s;
+}
+
+.main-button a:hover {
+    transition: .5s;
+    background-color: #D5924E;
 }
 
 .main-button h2 {
