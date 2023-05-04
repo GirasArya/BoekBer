@@ -70,6 +70,7 @@ $newQueryID = mysqli_query($con, "SELECT * FROM user WHERE id = '$iduser'");
                 {
                     echo "<h1> Username : $profile_data[Username]</h1>";
                     echo "<h2> Email    : $profile_data[Email]</h2>";
+                    echo "<h2> Phone Number    : $profile_data[Phone_Number]</h2>";
                 }
                 ?>
             </div>
