@@ -41,11 +41,11 @@ $QueryID = mysqli_query($con, "SELECT * FROM user WHERE id = '$iduser'");
       <a href="About.php">
         <li>About</li>
       </a>
-      <a href="Profile.php">
+      <a href="../Profile/Profile.php">
         <li>Profile</li>
       </a>
     </div>
-    
+
     <div class="navbar-profile">
       <img src="../../Asset//User Icon.svg" alt="Icon">
       <?php

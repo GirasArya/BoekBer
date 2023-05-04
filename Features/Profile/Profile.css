@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans';
+    background-color: #222121;
+}
+
+.container-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222121;
+    padding-top: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 2rem;
+
+}
+
+.navbar-profile {
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar-profile h2 {
+    padding-left: 14px;
+    font-family: 'Abril Fatface';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: white;
+}
+
+.navbar-list {
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar-list li {
+    list-style: none;
+    color: #D1A475;
+    font-weight: 500;
+    font-family: 'Abril Fatface';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.navbar-list a {
+    text-decoration: none;
+}
+
+.profile-header{
+    display: flex;
+    justify-content: center;
+}
+
+.profile-header h1{
+    font-family: 'Abril Fatface';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 49px;
+    color: white;
+}
+
+.profile-data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-data h1{
+    list-style: none;
+    color: #D1A475;
+    font-weight: 500;
+    font-family: 'Abril Fatface';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.profile-data h2{
+    list-style: none;
+    color: #D1A475;
+    font-weight: 500;
+    font-family: 'Abril Fatface';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+}
