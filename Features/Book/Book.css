@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans';
+    background-color: #222121;
+}
+
+.container-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222121;
+    padding-top: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 2rem;
+
+}
+
+.navbar-profile {
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar-profile h2 {
+    padding-left: 14px;
+    font-family: 'Abril Fatface';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: white;
+}
+
+.navbar-list {
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar-list li {
+    list-style: none;
+    color: #D1A475;
+    font-weight: 500;
+    font-family: 'Abril Fatface';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.navbar-list a {
+    text-decoration: none;
+}
+
+.booking-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.booking-header h2 {
+    font-family: 'Abril Fatface';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 49px;
+    color: #FFFFFF;
+}
+
+.booking-header img {
+    margin: 0 .75rem 0 0;
+}
+
+.booking-container {
+    display: flex;
+    justify-content: center;
+}
+
+.booking-wrapper {
+    padding: 6rem 0 0 0;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-rows: repeat(1, minmax(0, 1fr));
+    gap: 13rem;
+}
+
+.booking h2 {
+    padding: .75rem 0 .75rem 0;
+    font-family: 'Abril Fatface';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    color: #D1A475;
+}
+
+.booking h3 {
+    font-family: 'Abril Fatface';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    color: #999999;
+}
+
+#booking-alamat {
+    padding: .75rem 0 0 0;
+    color: #CCCCCC;
+}
+
+button {
+    font-family: 'Abril Fatface';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    width: 236px;
+    height: 28px;
+    border: 2px solid #D1A475;
+    transition: .3s;
+    color: #D1A475;
+    background: transparent;
+    text-decoration: none;
+    margin: .75rem 0 0 0;
+}
+
+button:hover {
+    transition: .3s;
+    background: #D1A475;
+    color: white;
+}
+
+Footer {
+    margin: 13rem 0 0 0;
+    background-color: #222121;
+    box-shadow: 0px -2px 4px rgba(255, 255, 255, 0.1);
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-container-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 25px 0 0 79px;
+}
+
+.footer-header h2 {
+    color: #D1A475;
+    font-family: 'Abril Fatface';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 80px;
+}
+
+.footer-social {
+    display: flex;
+    gap: 40px;
+    padding: 20px 0 0 0;
+}
+
+
+.footer-social i {
+    color: white;
+    width: 24px;
+    height: 24px;
+}
+
+.footer-address p {
+    font-family: 'Abril Fatface';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    padding: 86px 0 0 0;
+    color: #FFFFFF;
+}
+
+.footer-container-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 52px 81px 0 0;
+}
+
+.footer-container-right h2 {
+    color: #FFFFFF;
+    font-family: 'Abril Fatface';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.input-email input {
+    font-family: 'EB Garamond';
+    color: #FFFFFF;
+    width: 499px;
+    height: 46px;
+    background-color: transparent;
+    margin: 17px 0 0 0;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.input-email ::placeholder {
+    color: #FFFFFF;
+    padding-left: 21px;
+}
+
+.input-message input {
+    font-family: 'EB Garamond';
+    color: #FFFFFF;
+    width: 499px;
+    height: 117px;
+    background-color: transparent;
+    margin: 17px 0 0 0;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.input-message ::placeholder {
+    color: #FFFFFF;
+    padding-left: 21px;
+}
+
+.footer-copyright {
+    display: flex;
+    justify-content: center;
+    padding: 60px 0 0 0;
+}
+
+.footer-copyright p {
+    color: #FFFFFF;
+    font-family: 'EB Garamond';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    padding-bottom: 28px;
+}

@@ -34,10 +34,10 @@ $newQueryID = mysqli_query($con, "SELECT * FROM user WHERE id = '$iduser'");
                 <img src="./../../Asset/Navbar Logo.svg" alt="Boekber">
             </div>
             <div class="navbar-list">
-                <a href="./../Home/Home_after_login.php">
+                <a href="./../Features/Home/Home_after_login.php">
                     <li>Home</li>
                 </a>
-                <a href="Book.php">
+                <a href="../../Features/Book/Book.php">
                     <li>Book</li>
                 </a>
                 <a href="About.php">
@@ -51,8 +51,7 @@ $newQueryID = mysqli_query($con, "SELECT * FROM user WHERE id = '$iduser'");
             <div class="navbar-profile">
                 <img src="../../Asset//User Icon.svg" alt="Icon">
                 <?php
-                while ($baris = mysqli_fetch_array($QueryID)) 
-                {
+                while ($baris = mysqli_fetch_array($QueryID)) {
                     echo "<h2> $baris[Username]</h2>";
                 }
                 ?>
@@ -66,8 +65,7 @@ $newQueryID = mysqli_query($con, "SELECT * FROM user WHERE id = '$iduser'");
             </div>
             <div class="profile-data">
                 <?php
-                while ($profile_data = mysqli_fetch_array($newQueryID)) 
-                {
+                while ($profile_data = mysqli_fetch_array($newQueryID)) {
                     echo "<h1> Username : $profile_data[Username]</h1>";
                     echo "<h2> Email    : $profile_data[Email]</h2>";
                     echo "<h2> Phone Number    : $profile_data[Phone_Number]</h2>";
@@ -76,6 +74,7 @@ $newQueryID = mysqli_query($con, "SELECT * FROM user WHERE id = '$iduser'");
             </div>
         </div>
     </section>
+    <button><a href="../Home/Home_before_login.php">Sign Out</a></button>
 </body>
 
 </html>

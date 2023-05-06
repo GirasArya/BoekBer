@@ -38,7 +38,7 @@
       <a href="About.php">
         <li>About</li>
       </a>
-      <a href="Profile.php">
+      <a href="#">
         <li>Profile</li>
       </a>
     </div>

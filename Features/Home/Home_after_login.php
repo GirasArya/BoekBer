@@ -11,7 +11,6 @@ $QueryID = mysqli_query($con, "SELECT * FROM user WHERE id = '$iduser'");
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -35,7 +34,7 @@ $QueryID = mysqli_query($con, "SELECT * FROM user WHERE id = '$iduser'");
       <a href="Home_after_login.php">
         <li>Home</li>
       </a>
-      <a href="Book.php">
+      <a href="../../Features/Book/Book.php">
         <li>Book</li>
       </a>
       <a href="About.php">

@@ -1,16 +1,32 @@
 
-.container-navbar{
+.container-navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #222121;
     padding-top: 2rem;
     padding-left: 3rem;
     padding-right: 3rem;
     padding-bottom: 2rem;
-    background-color: white;
+
 }
 
-.navbar-list{
+.navbar-profile {
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar-profile h2 {
+    padding-left: 14px;
+    font-family: 'Abril Fatface';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: white;
+}
+
+.navbar-list {
     display: flex;
     gap: 2rem;
 }
@@ -26,25 +42,6 @@
     line-height: 22px;
 }
 
-.navbar-list a{
+.navbar-list a {
     text-decoration: none;
-}
-
-.navbar-button{
-    display: flex;
-    gap: 2rem;
-    align-items: center;
-}
-
-.navbar-button a{
-    text-decoration: none;
-}
-
-
-.navbar-logo {
-    color : #D1A475;
-}
-.navbar-button p{
-    color: #D1A475;
-    font-weight: 500;
 }
