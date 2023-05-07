@@ -38,7 +38,7 @@ $QueryID = mysqli_query($con, "SELECT * FROM user WHERE id = '$iduser'");
             <a href="../../Features/Home/Home_after_login.php">
                 <li>Home</li>
             </a>
-            <a href="../../Book/Book.php">
+            <a href="../../Features/Book/Book.php">
                 <li>Book</li>
             </a>
             <a href="About.php">
@@ -81,11 +81,10 @@ $QueryID = mysqli_query($con, "SELECT * FROM user WHERE id = '$iduser'");
                     while ($Barber = mysqli_fetch_array($QueryBarber)) {
                         echo    '<img src="../../Asset/Barber-Placeholder-pic.svg" alt="Barber Placeholder">';
                         echo "<h2> $Barber[nama_barber]</h2>";
-                        // echo "<h3> $Barber[Open_Days]</h2>";
                         echo "<h3> $Barber[Service_Hour]</h2>";
                         echo "<h3> Rp.$Barber[Price]</h2>";
                         echo '<button type="submit">';
-                        echo '<a class = "barber-link" href="../../Features/Barber/Barber.php"> Book! </a>';
+                        echo '<a class = "barber-link" href="../../Features/Order/Order.php"> Book! </a>';
                         echo '</button>';
                     }
                     echo '</div>';
