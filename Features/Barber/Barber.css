@@ -55,13 +55,13 @@ body {
     text-decoration: none;
 }
 
-.booking-header {
+.barber-header {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.booking-header h2 {
+.barber-header h2 {
     font-family: 'Abril Fatface';
     font-style: normal;
     font-weight: 400;
@@ -70,16 +70,30 @@ body {
     color: #FFFFFF;
 }
 
-.booking-header img {
+.barber-header img {
     margin: 0 .75rem 0 0;
+    transform: translateY(.2rem);
 }
 
-.booking-container {
+.barber-return-arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 59px;
+    height: 56.02px;
+    background: #1B1A1A;
+    box-shadow: inset 0px 4px 4px rgba(92, 92, 92, 0.25);
+    border-radius: 25.6263px;
+    transform: translateX(-29rem);
+}
+
+
+.barber-container {
     display: flex;
     justify-content: center;
 }
 
-.booking-wrapper {
+.barber-wrapper {
     padding: 6rem 0 0 0;
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -87,7 +101,7 @@ body {
     gap: 13rem;
 }
 
-.booking h2 {
+.barber h2 {
     padding: .75rem 0 .75rem 0;
     font-family: 'Abril Fatface';
     font-style: normal;
@@ -97,7 +111,7 @@ body {
     color: #D1A475;
 }
 
-.booking h3 {
+.barber h3 {
     font-family: 'Abril Fatface';
     font-style: normal;
     font-weight: 400;
@@ -106,14 +120,13 @@ body {
     color: #999999;
 }
 
-.booking-link{
+.barber-link {
     text-decoration: none;
     color: #FFFFFF;
 }
 
 
-
-#booking-alamat {
+#barber-alamat {
     padding: .75rem 0 0 0;
     color: #CCCCCC;
 }

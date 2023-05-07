@@ -20,12 +20,12 @@ $QueryID = mysqli_query($con, "SELECT * FROM user WHERE id = '$iduser'");
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Book.css">
+    <link rel="stylesheet" href="Barber.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Plus+Jakarta+Sans">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=EB+Garamond">
     <script src="https://kit.fontawesome.com/44003bbbd7.js" crossorigin="anonymous"></script>
-    <title>Booking</title>
+    <title>barber</title>
 </head>
 
 <body>
@@ -60,26 +60,32 @@ $QueryID = mysqli_query($con, "SELECT * FROM user WHERE id = '$iduser'");
     </div>
 
     <section>
-        <div class="booking-header">
-            <h2>Our Barbershop Partner</h2>
+        <div class="barber-header">
+            <div class="barber-return-arrow">
+                <a href="../Book/Book.php">
+                    <img src="../../Asset/return_arrow.svg">
+                </a>
+            </div>
+            <img src="../../Asset/Booking-Scissor-Icon.svg">
+            <h2>Our Cutter</h2>
         </div>
-        <div class="booking-container">
-            <div class="booking-wrapper">
+        <div class="barber-container">
+            <div class="barber-wrapper">
                 <!-- Looping untuk display toko barber di bawah ini -->
                 <?php
-                $TokoID = 1;
-                for ($TokoID = 1; $TokoID < 4; $TokoID++) {
-                    $QueryStore = mysqli_query($con, "SELECT * FROM `tempat_cukur` WHERE idToko = '$TokoID'");
-                    echo '<div class="booking">';
+                $BarberID = 1;
+                for ($BarberID = 1; $BarberID < 4; $BarberID++) {
+                    $QueryBarber = mysqli_query($con, "SELECT * FROM `tukang_cukur` WHERE idBarber = '$BarberID'");
+                    echo '<div class="barber">';
                     //looping ambil data toko barber per ID
-                    while ($Toko_Barber = mysqli_fetch_array($QueryStore)) {
+                    while ($Barber = mysqli_fetch_array($QueryBarber)) {
                         echo    '<img src="../../Asset/Barber-Placeholder-pic.svg" alt="Barber Placeholder">';
-                        echo "<h2> $Toko_Barber[Nama_Toko]</h2>";
-                        echo "<h3> $Toko_Barber[Open_Days]</h2>";
-                        echo "<h3> $Toko_Barber[Service]</h2>";
-                        echo "<h3> $Toko_Barber[Lokasi]</h2>";
+                        echo "<h2> $Barber[nama_barber]</h2>";
+                        // echo "<h3> $Barber[Open_Days]</h2>";
+                        echo "<h3> $Barber[Service_Hour]</h2>";
+                        echo "<h3> Rp.$Barber[Price]</h2>";
                         echo '<button type="submit">';
-                        echo '<a class = "booking-link" href="../../Features/Barber/Barber.php"> Book! </a>';
+                        echo '<a class = "barber-link" href="../../Features/Barber/Barber.php"> Book! </a>';
                         echo '</button>';
                     }
                     echo '</div>';
