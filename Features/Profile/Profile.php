@@ -34,7 +34,7 @@ $newQueryID = mysqli_query($con, "SELECT * FROM user WHERE id = '$iduser'");
                 <img src="./../../Asset/Navbar Logo.svg" alt="Boekber">
             </div>
             <div class="navbar-list">
-                <a href="./../Features/Home/Home_after_login.php">
+                <a href="./../Home/Home_after_login.php">
                     <li>Home</li>
                 </a>
                 <a href="../../Features/Book/Book.php">
@@ -74,7 +74,11 @@ $newQueryID = mysqli_query($con, "SELECT * FROM user WHERE id = '$iduser'");
             </div>
         </div>
     </section>
-    <button><a href="../Home/Home_before_login.php">Sign Out</a></button>
+    <button style="display: flex; justify-content:space-between; margin:auto; margin-top:50px;">
+        <a href="../Home/Home_before_login.php" style="padding: 10px 25px; border-radius: 0px; background-color: #D1A475; color: white; text-decoration: none; display: flex; justify-content: center;">
+        Sign Out
+        </a>
+    </button>
 </body>
 
 </html>
