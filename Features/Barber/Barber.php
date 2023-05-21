@@ -9,7 +9,6 @@ if (!isset($_SESSION['Username'])) {
 $iduser = $_SESSION["id"];
 
 $QueryID = mysqli_query($con, "SELECT * FROM user WHERE id = '$iduser'");
-
 ?>
 
 
@@ -44,9 +43,6 @@ $QueryID = mysqli_query($con, "SELECT * FROM user WHERE id = '$iduser'");
             <a href="About.php">
                 <li>About</li>
             </a>
-            <a href="../Profile/Profile.php">
-                <li>Profile</li>
-            </a>
         </div>
 
         <div class="navbar-profile">
@@ -78,8 +74,8 @@ $QueryID = mysqli_query($con, "SELECT * FROM user WHERE id = '$iduser'");
                     $QueryBarber = mysqli_query($con, "SELECT * FROM `tukang_cukur` WHERE idBarber = '$BarberID'");
                     echo '<div class="barber">';
                     //looping ambil data toko barber per ID
-                    while ($Barber = mysqli_fetch_array($QueryBarber)) {
-                        echo    '<img src="../../Asset/Barber-Placeholder-pic.svg" alt="Barber Placeholder">';
+                    while ($Barber = mysqli_fetch_assoc($QueryBarber)) {
+                        echo '<img src="../../Asset/Barber-placeholder-pic.svg" alt="Barber Placeholder">';
                         echo "<h2> $Barber[nama_barber]</h2>";
                         echo "<h3> $Barber[Service_Hour]</h2>";
                         echo "<h3> Rp.$Barber[Price]</h2>";

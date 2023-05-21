@@ -11,6 +11,7 @@ $QueryID = mysqli_query($con, "SELECT * FROM user WHERE id = '$iduser'");
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -40,18 +41,22 @@ $QueryID = mysqli_query($con, "SELECT * FROM user WHERE id = '$iduser'");
       <a href="About.php">
         <li>About</li>
       </a>
-      <a href="../Profile/Profile.php">
-        <li>Profile</li>
+      <a href="../../Features/History/History.php">
+        <li>History</li>
       </a>
     </div>
 
     <div class="navbar-profile">
-      <img src="../../Asset//User Icon.svg" alt="Icon">
-      <?php
-      while ($baris = mysqli_fetch_array($QueryID)) {
-        echo "<h2> $baris[Username]</h2>";
-      }
-      ?>
+      <div>
+        <a href="../Profile/Profile.php" class="profile-wrapper">
+          <img src="../../Asset//User Icon.svg" alt="Icon">
+          <?php
+          while ($baris = mysqli_fetch_array($QueryID)) {
+            echo "<h2> $baris[Username]</h2>";
+          }
+          ?>
+        </a>
+      </div>
     </div>
   </div>
 

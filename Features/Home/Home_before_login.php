@@ -38,9 +38,6 @@
       <a href="About.php">
         <li>About</li>
       </a>
-      <a href="#">
-        <li>Profile</li>
-      </a>
     </div>
     <div class="navbar-button">
       <a href="./../Register/Register.php">

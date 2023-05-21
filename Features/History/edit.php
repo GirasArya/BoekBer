@@ -22,7 +22,7 @@ if (isset($_POST['submit'])) {
     $Telepon = $_POST['Phone_Number'];
     $idUser = $_SESSION['id'];
 
-    mysqli_query($con, "INSERT INTO confirmation VALUES ('','$idUser','$Nama','$Tanggal','$Jam','$Telepon','$idBarber','$barber','$idToko','$toko')");
+    mysqli_query($con, "UPDATE confirmation SET NamaLengkap = '$Nama', Tanggal = '$Tanggal', Jam = '$Jam', Phone_Number = '$Telepon', Barber_Pilihan = '$barber', Toko_Pilihan = '$toko' ");
     $idUser = $_SESSION['id'];
     $res = mysqli_query($con, "SELECT * FROM confirmation WHERE iduser = '$idUser'");
     $baris = mysqli_fetch_assoc($res);
@@ -30,26 +30,18 @@ if (isset($_POST['submit'])) {
     $confirmationID = $_POST['confirmationid'];
     mysqli_query($con, "INSERT INTO History VALUES('','$confirmationID')");
     header("Location: ../../Features/History/History.php");
-
-
 }
-// else {
-//    echo "<h2>ERORR</h2>";
-// }
-
-
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reserve</title>
+    <title>Edit</title>
 </head>
-
+<body>
 <body>
     <!-- Form section -->
     <section>
@@ -90,5 +82,4 @@ if (isset($_POST['submit'])) {
         </div>
     </section>
 </body>
-
 </html>

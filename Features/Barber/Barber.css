@@ -20,6 +20,13 @@ body {
 
 }
 
+.profile-wrapper{
+    display: flex;
+    flex-direction: row;
+}
+
+
+
 .navbar-profile {
     display: flex;
     flex-direction: row;
@@ -53,6 +60,27 @@ body {
 
 .navbar-list a {
     text-decoration: none;
+}
+
+.navbar-button {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    color: #D1A475;
+
+}
+
+.navbar-button a {
+    text-decoration: none;
+}
+
+.navbar-logo {
+    color: #D1A475;
+}
+
+.navbar-button p {
+    color: #D1A475;
+    font-weight: 500;
 }
 
 .barber-header {
