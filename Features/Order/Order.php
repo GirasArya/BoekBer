@@ -30,8 +30,6 @@ if (isset($_POST['submit'])) {
     $confirmationID = $_POST['confirmationid'];
     mysqli_query($con, "INSERT INTO History VALUES('','$confirmationID')");
     header("Location: ../../Features/History/History.php");
-
-
 }
 // else {
 //    echo "<h2>ERORR</h2>";
@@ -71,16 +69,16 @@ if (isset($_POST['submit'])) {
                 </div>
                 <div class="order-form">
                     <h2>Nama Lengkap</h2>
-                    <input type="text" name="NamaLengkap">
+                    <input type="text" name="NamaLengkap" required>
 
                     <h2>Tanggal Kedatangan</h2>
-                    <input type="text" name="Tanggal">
+                    <input type="date" name="Tanggal" required>
 
                     <h2>Jam Kedatangan</h2>
-                    <input type="text" name="Jam">
+                    <input type="time" name="Jam" required>
 
                     <h2>Phone Number</h2>
-                    <input type="text" name="Phone_Number">
+                    <input type="text" name="Phone_Number" required>
                 </div>
                 <div class="order-button">
                     <h2>Submit</h2>

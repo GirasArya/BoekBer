@@ -35,51 +35,55 @@ if (isset($_POST['submit'])) {
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edit</title>
 </head>
+
 <body>
-<body>
-    <!-- Form section -->
-    <section>
-        <div class="order-container">
-            <form action="" method="post">
-                <div class="order-toko-barber">
-                    <h2>Pilih Toko</h2>
-                    <select name="Toko_Pilihan">
-                        <option>Hairgood Barbershop</option>
-                        <option>Everyday Barber</option>
-                        <option>Sigma Barbershop</option>
-                    </select>
-                    <h2>Pilih Barber</h2>
-                    <select name="Barber_Pilihan">
-                        <option>Agus Suryana</option>
-                        <option>John Doe</option>
-                        <option>Caelus Jade</option>
-                    </select>
-                </div>
-                <div class="order-form">
-                    <h2>Nama Lengkap</h2>
-                    <input type="text" name="NamaLengkap">
 
-                    <h2>Tanggal Kedatangan</h2>
-                    <input type="text" name="Tanggal">
+    <body>
+        <!-- Form section -->
+        <section>
+            <div class="order-container">
+                <form action="" method="post">
+                    <div class="order-toko-barber">
+                        <h2>Pilih Toko</h2>
+                        <select name="Toko_Pilihan">
+                            <option>Hairgood Barbershop</option>
+                            <option>Everyday Barber</option>
+                            <option>Sigma Barbershop</option>
+                        </select>
+                        <h2>Pilih Barber</h2>
+                        <select name="Barber_Pilihan">
+                            <option>Agus Suryana</option>
+                            <option>John Doe</option>
+                            <option>Caelus Jade</option>
+                        </select>
+                    </div>
+                    <div class="order-form">
+                        <h2>Nama Lengkap</h2>
+                        <input type="text" name="NamaLengkap" required>
 
-                    <h2>Jam Kedatangan</h2>
-                    <input type="text" name="Jam">
+                        <h2>Tanggal Kedatangan</h2>
+                        <input type="date" name="Tanggal" required>
 
-                    <h2>Phone Number</h2>
-                    <input type="text" name="Phone_Number">
-                </div>
-                <div class="order-button">
-                    <h2>Submit</h2>
-                    <button name="submit" type="submit">Submit</button>
-                </div>
-            </form>
-        </div>
-    </section>
-</body>
+                        <h2>Jam Kedatangan</h2>
+                        <input type="time" name="Jam" required>
+
+                        <h2>Phone Number</h2>
+                        <input type="text" name="Phone_Number" required>
+                    </div>
+                    <div class="order-button">
+                        <h2>Submit</h2>
+                        <button name="submit" type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </body>
+
 </html>

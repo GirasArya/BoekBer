@@ -60,8 +60,8 @@ $QueryHistory = mysqli_query($con, "SELECT * FROM confirmation WHERE iduser = '$
         </div>
     </div>
 
-    <section>
-        <table class="styled-table">
+    <section class="history-container">
+        <table class="history-table">
             <thead>
                 <tr>
                     <th>Nama Lengkap</th>
@@ -72,7 +72,7 @@ $QueryHistory = mysqli_query($con, "SELECT * FROM confirmation WHERE iduser = '$
                     <th>Barber</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody class="history-data">
 
                 <?php
                 $iduser = $_SESSION["id"];
@@ -96,9 +96,13 @@ $QueryHistory = mysqli_query($con, "SELECT * FROM confirmation WHERE iduser = '$
                     echo "<td>" . $baris['Barber_Pilihan'] . "</td>";
 
                     echo "<td>";
+                    echo "<button>";
                     echo "<a href='hapus.php?id=" . $baris['confirmationid'] . "'><b>Delete</b></a>";
+                    echo "</button>";
                     echo "<br>";
+                    echo "<button>";
                     echo "<a href='edit.php?id=" . $baris['confirmationid'] . "'><b>Edit</b></a>";
+                    echo "<button>";
                     echo "</td>";
                     echo "</tr>";
                 }
