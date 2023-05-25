@@ -11,6 +11,7 @@ $QueryHistory = mysqli_query($con, "SELECT * FROM confirmation WHERE iduser = '$
 
 ?>
 
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -24,7 +25,9 @@ $QueryHistory = mysqli_query($con, "SELECT * FROM confirmation WHERE iduser = '$
     <link rel="stylesheet" href="History.css">
     <script src="https://kit.fontawesome.com/44003bbbd7.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../../Component/Footer/Footer.css">
-    <title>History</title>
+    <link rel="stylesheet" href="About.css">
+
+    <title>About Boekber</title>
 </head>
 
 <body>
@@ -62,66 +65,54 @@ $QueryHistory = mysqli_query($con, "SELECT * FROM confirmation WHERE iduser = '$
         </div>
     </div>
 
-    <section class="history-container">
-        <div class="history-header">
-            <h2>
-                Order
-            </h2>
+    <main>
+        <div class="about-header">
+            <h1>About</h1>
         </div>
-        <table class="history-table">
-            <thead>
-                <tr>
-                    <th>Nama Lengkap</th>
-                    <th>Tanggal</th>
-                    <th>Jam</th>
-                    <th>Nomor Telepon</th>
-                    <th>Barbershop</th>
-                    <th>Barber</th>
-                </tr>
-            </thead>
-            <tbody class="history-data">
+        <div class="about-main">
+            <div class="main-container">
+                <div class="about-image">
+                    <img src="../../Asset/Navbar Logo.svg" alt="Boekber Logo">
+                </div>
+                <div class="about-description">
+                    <p>
+                        BoekBer is an online haircut service ordering platform for customers who want to get their hair done without having to leave the house.
+                        With BoekBer, customers can choose an available Store or barber,
+                        choose the time and place to get the service.
+                        Customers can also read reviews and ratings from users who already tried our services.
+                        BoekBer also makes it easy for you to manage their customers' schedules and orders.
+                        You can edit and delete your order however you wish.
+                    </p>
+                </div>
+            </div>
+        </div>
 
-                <?php
-                $iduser = $_SESSION["id"];
-                $kueri = mysqli_query($con, "SELECT * FROM confirmation WHERE iduser = '$iduser'");
-
-
-
-                while ($baris = mysqli_fetch_array($kueri)) {
-                    //mengambil id konfirmasi
-
-                    $_POST["confirmationid"] = $baris["confirmationid"];
-
-                    echo "<tr>";
-
-
-                    echo "<td>" . $baris['NamaLengkap'] . "</td>";
-                    echo "<td>" . $baris['Tanggal'] . "</td>";
-                    echo "<td>" . $baris['Jam'] . "</td>";
-                    echo "<td>" . $baris['Phone_Number'] . "</td>";
-                    echo "<td>" . $baris['Toko_Pilihan'] . "</td>";
-                    echo "<td>" . $baris['Barber_Pilihan'] . "</td>";
-
-                    echo "<td>";
-                    echo "<button>";
-                    echo "<a href='hapus.php?id=" . $baris['confirmationid'] . "'><b>Delete</b></a>";
-                    echo "</button>";
-
-                    echo "<button>";
-                    echo "<a href='edit.php?id=" . $baris['confirmationid'] . "'><b>Edit</b></a>";
-                    echo "</button>";
-                    echo "</td>";
-
-                    echo "</tr>";
-                }
+        <div class="about-developers">
+            <div class="about-developer-header">
+                <h2>Meet The DEVELOPERs</h2>
+                <img src="../../Asset/moustache w line.svg">
+            </div>
+            <div class="about-developer-profile">
+                <div class="developer">
+                    <img src="../../Asset/user bima.svg" alt="Tan Bima Wiragama">
+                    <h2>Tan Bima Wiragama</h2>
+                    <h3>UI Designer</h3>
+                </div>
+                <div class="developer">
+                    <img src="../../Asset/user dika.svg" alt="Andika Rafi Lazuardi">
+                    <h2>Andika Rafi Lazuardi</h2>
+                    <h3>UI Designer / Back End Developer</h3>
+                </div>
+                <div class="developer">
+                    <img src="../../Asset/user giras.svg" alt="Giras Arya Ichsani">
+                    <h2>Giras Arya Ichsani</h2>
+                    <h3>Full Stack Developer</h3>
+                </div>
+            </div>
+        </div>
+    </main>
 
 
-                ?>
-
-            </tbody>
-        </table>
-
-    </section>
     <Footer>
         <div class="footer">
             <div class="footer-container-left">
@@ -157,7 +148,6 @@ $QueryHistory = mysqli_query($con, "SELECT * FROM confirmation WHERE iduser = '$
             <p>copyright ©️ Kelompok 2 RPL 2</p>
         </div>
     </Footer>
-
 </body>
 
 </html>

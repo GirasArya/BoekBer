@@ -3,23 +3,22 @@
     padding: 0;
 }
 
+main {
+    background-color: #222121;
+}
+
 body {
     font-family: 'Plus Jakarta Sans';
 }
 
 a {
     text-decoration: none;
-    color: #DAB691;
 }
 
 i {
     color: #DAB691;
     width: 20px;
     height: 20px;
-}
-
-section {
-    background-color: #222121;
 }
 
 .container-navbar {
@@ -39,10 +38,6 @@ section {
     flex-direction: row;
     align-items: center;
 }
-
-
-
-
 
 .navbar-profile {
     display: flex;
@@ -96,67 +91,116 @@ section {
     color: #D1A475;
 }
 
-
-.history-container {
+.about-header {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    padding-bottom: 6rem;
+    padding: 3rem 0 2rem 0;
 }
 
-.history-header {
-    padding-bottom: 5.5rem;
-}
-
-.history-header h2 {
+.about-header h1 {
     font-family: 'Abril Fatface';
     font-style: normal;
     font-weight: 400;
     font-size: 36px;
     line-height: 49px;
-    text-align: center;
     color: #FFFFFF;
 }
 
-th {
-    background-color: #D1A475;
-    border: 1px solid #4E4D4D;
-    width: 243px;
-    height: 54px;
+.about-main {
+    display: flex;
+    justify-content: center;
+}
 
-    font-family: 'Abril Fatface';
+.main-container {
+    display: flex;
+    width: 1190px;
+    height: 182px;
+    justify-content: center;
+    align-items: center;
+    gap: 65px;
+    padding-bottom: 6rem;
+}
+
+.about-image img {
+    width: 401px;
+    height: 102px;
+}
+
+.about-description p {
+    font-family: 'EB Garamond';
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
-    line-height: 27px;
-    text-align: center;
-    color: #222121;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    color: #FFFFFF;
 }
 
+.about-developers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
-td {
-    text-align: center;
-    background: #E8D2BA;
-    border: 1px solid #4E4D4D;
+.about-developer-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 0 6rem 0;
+}
 
+.about-developer-header h2 {
     font-family: 'Abril Fatface';
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
-    line-height: 27px;
-    text-align: center;
-    color: #222121;
+    font-size: 26px;
+    line-height: 35px;
+    color: #D1A475;
+    padding-bottom: 2rem;
 }
 
-td:last-child {
-    background: none;
-    border: none;
+.about-developer-header img {
+    width: 191px;
+    height: 15.84px;
 }
 
-button{
-    width: 100px;
-    height: 80px;
-    background-color: transparent;
-    border: 2px solid #D1A475;
+.about-developer-profile {
+    display: flex;
+    justify-content: center;
+    column-gap: 10rem;
+    padding-bottom: 6rem;
 }
+
+
+.developer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.developer img{
+    padding-bottom: 3rem;
+}
+
+
+.developer h2 {
+    font-family: 'Abril Fatface';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 35px;
+    color: #FFFFFF;
+}
+
+.developer h3 {
+    font-family: 'Abril Fatface';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 35px;
+    color: #D1A475;
+}
+

@@ -29,6 +29,7 @@ button {
 button:hover {
     transition: .3s;
     background: #D1A475;
+    color: #000000;
 }
 
 .nav-logo {
@@ -73,8 +74,15 @@ button:hover {
     font-weight: 400;
     font-size: 18px;
     color: white;
+    transition: .3s;
     padding: 0 0 0 26px;
 }
+
+.form-login input:hover {
+    transition: .3s;
+    border: 1.5px solid #D1A475;
+}
+
 
 .form-login input::placeholder {
     color: white;
@@ -87,7 +95,7 @@ button:hover {
     justify-content: space-between;
 }
 
-.form-submit button a{
+.form-submit button a {
     background: transparent;
     text-decoration: none;
 }

@@ -8,6 +8,16 @@ body {
     background-color: #222121;
 }
 
+a{
+    text-decoration: none;
+}
+
+i {
+    color: #DAB691;
+    width: 20px;
+    height: 20px;
+}
+
 .container-navbar {
     display: flex;
     justify-content: space-between;
@@ -20,16 +30,17 @@ body {
 
 }
 
-.profile-wrapper{
+.profile-wrapper {
     display: flex;
     flex-direction: row;
+    align-items: center;
+
 }
-
-
 
 .navbar-profile {
     display: flex;
     flex-direction: row;
+    column-gap: 20px;
 }
 
 .navbar-profile h2 {
@@ -60,14 +71,6 @@ body {
 
 .navbar-list a {
     text-decoration: none;
-}
-
-.navbar-button {
-    display: flex;
-    gap: 2rem;
-    align-items: center;
-    color: #D1A475;
-
 }
 
 .navbar-button a {

@@ -1,0 +1,321 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans';
+}
+
+a {
+    text-decoration: none;
+}
+
+i {
+    color: #DAB691;
+    width: 20px;
+    height: 20px;
+}
+
+section {
+    background-color: #222121;
+}
+
+input[type=text] {
+    height: 30px;
+    font-family: 'Abril Fatface';
+    padding: 2px 10px;
+    background: #222121;
+    color: #D1A475;
+    border: 2px solid #D1A475;
+}
+
+input[type=date] {
+    width: 289px;
+    height: 43px;
+    font-family: 'Abril Fatface';
+    Background: #222121;
+    text-align: center;
+    padding: 2px 10px;
+    color: #FFFFFF;
+    border: 2px solid #D1A475;
+}
+
+input[type=date]::-webkit-calendar-picker-indicator {
+    color-scheme: dark;
+    position: absolute;
+    transform: translateX(-20%);
+}
+
+input[type=time] {
+    width: 289px;
+    height: 43px;
+    font-family: 'Abril Fatface';
+    text-align: center;
+    Background: #222121;
+    color: #FFFFFF;
+    padding: 2px 10px;
+    border: 2px solid #D1A475;
+}
+
+input[type=time]::-webkit-calendar-picker-indicator {
+    color-scheme: dark;
+    position: absolute;
+    transform: translateX(-50%);
+}
+
+select {
+    font-family: 'Abril Fatface';
+    width: 289px;
+    height: 43px;
+    padding: 0 10px 0 10px;
+    background: #222121;
+    color: #D1A475;
+    border: 2px solid #D1A475;
+}
+
+option {
+    font-family: 'Abril Fatface';
+    font-style: normal;
+    font-size: 14px;
+    color: #DAB691;
+}
+
+input::content {
+    color: #D1A475;
+}
+
+.return-arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 59px;
+    height: 56.02px;
+    background: #1B1A1A;
+    box-shadow: inset 0px 4px 4px rgba(92, 92, 92, 0.25);
+    border-radius: 25.6263px;
+    transform: translateX(-26rem);
+}
+
+
+
+.order-header {
+    padding: 6rem 0 3rem 0;
+    display: flex;
+}
+
+.order-header h1 {
+    font-family: 'Abril Fatface';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 49px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.container-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222121;
+    padding-top: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 2rem;
+
+}
+
+.profile-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+
+
+
+.navbar-profile {
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+}
+
+.navbar-profile h2 {
+    padding-left: 14px;
+    font-family: 'Abril Fatface';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: white;
+}
+
+.navbar-list {
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar-list li {
+    list-style: none;
+    color: #D1A475;
+    font-weight: 500;
+    font-family: 'Abril Fatface';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.navbar-list a {
+    text-decoration: none;
+}
+
+.navbar-button {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    color: #D1A475;
+
+}
+
+.navbar-button a {
+    text-decoration: none;
+}
+
+.navbar-logo {
+    color: #D1A475;
+}
+
+.order {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.order-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 4rem;
+    transform: translateX(76px);
+}
+
+.order-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.order-toko h2 {
+    font-family: 'Abril Fatface';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 35px;
+    padding: 0 0 9px 0;
+    color: #E8D2BA;
+}
+
+.order-barber h2 {
+    font-family: 'Abril Fatface';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    padding: 0 0 9px 0;
+    line-height: 35px;
+    color: #E8D2BA;
+}
+
+.order-nama h2 {
+    font-family: 'Abril Fatface';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 35px;
+    color: #E8D2BA;
+    padding: 0 0 9px 0;
+}
+
+.order-telepon h2 {
+    font-family: 'Abril Fatface';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 35px;
+    padding: 0 0 9px 0;
+    color: #E8D2BA;
+}
+
+.order-tanggal h2 {
+    font-family: 'Abril Fatface';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 35px;
+    padding: 0 0 9px 0;
+    color: #E8D2BA;
+}
+
+.order-jam h2 {
+    font-family: 'Abril Fatface';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 35px;
+    padding: 0 0 9px 0;
+    color: #E8D2BA;
+}
+
+.order-wrapper-nama-telepon {
+    display: flex;
+    align-items: center;
+    width: 1120px;
+    height: 211px;
+    background: #4E4D4D;
+    box-shadow: 0px 14px 30px -7px rgba(16, 24, 40, 0.18);
+    border-radius: 10px;
+    margin: 0 0 1rem 0;
+}
+
+.order-wrapper-toko-barber {
+    display: flex;
+    align-items: center;
+    width: 1120px;
+    height: 377px;
+    background: #4E4D4D;
+    box-shadow: 0px 14px 30px -7px rgba(16, 24, 40, 0.18);
+    border-radius: 10px;
+}
+
+.order-button {
+    display: flex;
+    justify-content: center;
+    transform: translateY(37px);
+    padding: 0 0 7rem 0;
+}
+
+.order-button button {
+    width: 130px;
+    height: 44px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    border: 2px solid #DAB691;
+    font-family: 'Abril Fatface';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #E8D2BA;
+    transition: .3s;
+}
+
+.order-button button:hover {
+    width: 184px;
+    transition: .3s;
+    background-color: #DAB691;
+    color: #222121;
+}

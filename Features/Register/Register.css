@@ -15,7 +15,9 @@ a {
     letter-spacing: -0.02em;
     text-decoration-line: underline;
     color: #FFFFFF;
+    transition: .3s;
 }
+
 
 button {
     width: 221px;
@@ -28,6 +30,7 @@ button {
 button:hover {
     transition: .3s;
     background: #D1A475;
+    color: #000000;
 }
 
 .nav-logo {
@@ -63,7 +66,7 @@ button:hover {
 }
 
 .form-register input {
-    width: 473px;
+    width: 400px;
     height: 46px;
     background: rgba(27, 27, 27, 0.4);
     border: 1px solid rgba(255, 255, 255, 0.5);
@@ -73,6 +76,12 @@ button:hover {
     font-size: 18px;
     color: white;
     padding: 0 0 0 26px;
+    transition: .3s;
+}
+
+.form-register input:hover {
+    border: 1.5px solid #D1A475;
+    transition: .3s;
 }
 
 .form-register input::placeholder {

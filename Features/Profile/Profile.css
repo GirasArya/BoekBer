@@ -8,6 +8,18 @@ body {
     background-color: #222121;
 }
 
+i {
+    color: #DAB691;
+    width: 20px;
+    height: 20px;
+}
+
+.profile-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 .container-navbar {
     display: flex;
     justify-content: space-between;
@@ -23,6 +35,7 @@ body {
 .navbar-profile {
     display: flex;
     flex-direction: row;
+    column-gap: 20px;
 }
 
 .navbar-profile h2 {
@@ -55,12 +68,13 @@ body {
     text-decoration: none;
 }
 
-.profile-header{
+.profile-header {
     display: flex;
     justify-content: center;
+    padding: 1.25rem 0 3rem 0;
 }
 
-.profile-header h1{
+.profile-header h1 {
     font-family: 'Abril Fatface';
     font-style: normal;
     font-weight: 400;
@@ -73,31 +87,58 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 1.75rem;
 }
 
-.profile-data h1{
-    list-style: none;
-    color: #D1A475;
-    font-weight: 500;
-    font-family: 'Abril Fatface';
+.profile-data h1 {
+    font-family: 'EB Garamond';
     font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 22px;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 65px;
+    color: #FFFFFF;
+    padding: 5px 10px;
 }
 
-.profile-data h2{
-    list-style: none;
-    color: #D1A475;
-    font-weight: 500;
-    font-family: 'Abril Fatface';
+.profile-data h2 {
+    font-family: 'EB Garamond';
     font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 22px;
+    font-weight: 500;
+    font-size: 24px;
+    padding: 5px 10px;
+    line-height: 39px;
+    color: #FFFFFF;
+
+    background: #222121;
+    box-shadow: 0px 0px 4px rgba(255, 255, 255, 0.25);
+    border-radius: 7px;
 }
 
-a{
+a {
     text-decoration: none;
+}
+
+.signout-button {
+    padding: 3rem 0 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    font-family: 'Abril Fatface';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
     color: white;
+    background-color: transparent;
+    border: 2px solid #D1A475;
+    padding: 10px 24px;
+    transition: .3s;
+}
+
+button:hover {
+    transition: .3s;
+    background-color: #96803A;
+    border: none;
+    padding: 10px 40px;
 }

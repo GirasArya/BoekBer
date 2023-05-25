@@ -23,6 +23,7 @@ $newQueryID = mysqli_query($con, "SELECT * FROM user WHERE id = '$iduser'");
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Plus+Jakarta+Sans">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=EB+Garamond">
+    <script src="https://kit.fontawesome.com/44003bbbd7.js" crossorigin="anonymous"></script>
     <title>Profile</title>
 </head>
 
@@ -34,29 +35,34 @@ $newQueryID = mysqli_query($con, "SELECT * FROM user WHERE id = '$iduser'");
                 <img src="./../../Asset/Navbar Logo.svg" alt="Boekber">
             </div>
             <div class="navbar-list">
-                <a href="./../Home/Home_after_login.php">
+                <a href="../Home/Home_after_login.php">
                     <li>Home</li>
                 </a>
                 <a href="../../Features/Book/Book.php">
                     <li>Book</li>
                 </a>
-                <a href="About.php">
+                <a href="../../Features/About/About.php">
                     <li>About</li>
-                </a>
-                <a href="Profile.php">
-                    <li>Profile</li>
                 </a>
             </div>
 
             <div class="navbar-profile">
-                <img src="../../Asset//User Icon.svg" alt="Icon">
-                <?php
-                while ($baris = mysqli_fetch_array($QueryID)) {
-                    echo "<h2> $baris[Username]</h2>";
-                }
-                ?>
+                <a href="../History/History.php">
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+                </a>
+                <div>
+                    <a href="../Profile/Profile.php" class="profile-wrapper">
+                        <i class="fa-regular fa-user"></i>
+                        <?php
+                        while ($baris = mysqli_fetch_array($QueryID)) {
+                            echo "<h2> $baris[Username]</h2>";
+                        }
+                        ?>
+                    </a>
+                </div>
             </div>
         </div>
+
     </section>
     <section>
         <div class="profile-container">
@@ -66,19 +72,21 @@ $newQueryID = mysqli_query($con, "SELECT * FROM user WHERE id = '$iduser'");
             <div class="profile-data">
                 <?php
                 while ($profile_data = mysqli_fetch_array($newQueryID)) {
-                    echo "<h1> Username : $profile_data[Username]</h1>";
-                    echo "<h2> Email    : $profile_data[Email]</h2>";
-                    echo "<h2> Phone Number    : $profile_data[Phone_Number]</h2>";
+                    echo "<h1> $profile_data[Username]</h1>";
+                    echo "<h2> $profile_data[Phone_Number]</h2>";
+                    echo "<h2> $profile_data[Email]</h2>";
                 }
                 ?>
             </div>
         </div>
     </section>
-    <button style="display: flex; justify-content:space-between; margin:auto; margin-top:50px;">
-        <a href="../Home/Home_before_login.php" style="padding: 10px 25px; border-radius: 0px; background-color: #D1A475; color: white; text-decoration: none; display: flex; justify-content: center;">
-        Sign Out
+    <div class="signout-button">
+        <a href="../Home/Home_before_login.php">
+            <button>
+                Sign Out
+            </button>
         </a>
-    </button>
+    </div>
 </body>
 
 </html>

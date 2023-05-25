@@ -12,6 +12,12 @@ a{
     text-decoration: none;
 }
 
+i {
+    color: #DAB691;
+    width: 20px;
+    height: 20px;
+}
+
 .container-navbar {
     display: flex;
     justify-content: space-between;
@@ -24,16 +30,20 @@ a{
 
 }
 
-.profile-wrapper{
+.profile-wrapper {
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
+
+
 
 
 
 .navbar-profile {
     display: flex;
     flex-direction: row;
+    column-gap: 20px;
 }
 
 .navbar-profile h2 {
@@ -80,11 +90,6 @@ a{
 
 .navbar-logo {
     color: #D1A475;
-}
-
-.navbar-button p {
-    color: #D1A475;
-    font-weight: 500;
 }
 
 .booking-header {

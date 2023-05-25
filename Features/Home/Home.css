@@ -11,6 +11,12 @@ a{
     text-decoration: none;
 }
 
+i {
+    color: #DAB691;
+    width: 20px;
+    height: 20px;
+}
+
 .container-navbar {
     display: flex;
     justify-content: space-between;
@@ -28,11 +34,10 @@ a{
     flex-direction: row;
 }
 
-
-
 .navbar-profile {
     display: flex;
     flex-direction: row;
+    column-gap: 20px;
 }
 
 .navbar-profile h2 {
@@ -266,9 +271,13 @@ a{
     padding: 215px 0 0 0;
 }
 
+.booking-desc-container{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
 .booking-desc {
-    display: grid;
-    grid-template-columns: repeat(5, minmax(0, 1fr));
     justify-content: space-evenly;
     justify-items: end;
     text-align: center;
@@ -276,8 +285,8 @@ a{
 }
 
 .booking-desc h2 {
-    color: #D5924E;
-    width: 149px;
+    color: #D1A475;
+    width: 171px;
     height: 54px;
     font-family: 'Abril Fatface';
     font-weight: 400;

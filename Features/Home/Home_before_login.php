@@ -35,7 +35,7 @@
       <a href="#">
         <li>Book</li>
       </a>
-      <a href="About.php">
+      <a href="../../Features/About/About_before.php">
         <li>About</li>
       </a>
     </div>
@@ -82,9 +82,8 @@
         </div>
         <div class="desc-body">
           <h2>
-            Boekber is a website that provides lorem ipsum dolor sit amet constructor sit dolor amet
-            constrectur sit dolor amet lorem ipsum dolor sit amet constructor sit
-            dolor amet lorem ipsum dolor sit amet constructor sit dolor amet
+            Boekber adalah pilihan anda untuk reservasi Barbershop dan Barber. Kami menyediakan
+            beragam pilihan toko dan juga barber yang sudah sangat kami rekomendasikan untuk pengguna.
           </h2>
         </div>
       </div>
@@ -109,7 +108,8 @@
       </div>
     </span>
 
-    <span> <!-- Booking -->
+
+    <span>
       <div class="desc-booking">
         <div class="desc-header">
           <h2> How to book with BOEKBER</h2>
@@ -119,8 +119,22 @@
           <img src="./../../Asset/flow.svg" alt="booking-flow" />
 
         </div>
-        <div class="booking-desc">
-          <h2>Open BOEKBER on website</h2>
+        <div class="booking-desc-container">
+          <div class="booking-desc">
+            <h2>Open BOEKBER on website</h2>
+          </div>
+          <div class="booking-desc">
+            <h2>Sign Up / Login To Your Account</h2>
+          </div>
+          <div class="booking-desc">
+            <h2>Look For Your Desired Store</h2>
+          </div>
+          <div class="booking-desc">
+            <h2>Fill Up Registration Form</h2>
+          </div>
+          <div class="booking-desc">
+            <h2>Check Your Order Status</h2>
+          </div>
         </div>
       </div>
     </span>
@@ -143,18 +157,16 @@
           <div class="review2">
             <img src="../../Asset/user dika.svg" alt="Dika" />
             <h2>Dhika Chad</h2>
-            <p>BOEKBER sangat bermanfaat untuk saya,
-              saya jadi tidak perlu mengantri panjang
-              untuk mendapatkan cukuran terbaik untuk
-              rambut saya</p>
+            <p>
+              Sangat Recommended. Reservasinya sangat mudah cukup perlu mengisi form saja.
+            </p>
           </div>
           <div class="review3">
             <img src="../../Asset/user giras.svg" alt="Giras" />
             <h2>Giras Chad</h2>
-            <p>BOEKBER sangat bermanfaat untuk saya,
-              saya jadi tidak perlu mengantri panjang
-              untuk mendapatkan cukuran terbaik untuk
-              rambut saya
+            <p>
+              Boekber membuat diri saya yang malas ini memudahkan untuk pergi ke barber. Cukup dengan pilih toko dan barber.
+              Saya tinggal pergi aja tanpa ngantri.
             </p>
           </div>
         </div>
@@ -184,14 +196,9 @@
         </div>
       </div>
       <div class="footer-container-right">
-        <h2>Feedback Form</h2>
-        <div class="input">
-          <div class="input-email">
-            <input type="text" placeholder="Email" />
-          </div>
-          <div class="input-message">
-            <input type="text" placeholder="Put Your Message" />
-          </div>
+        <h2>Detail Alamat</h2>
+        <div class="footer-map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1341.9692905706263!2d106.73098484173013!3d-6.558171113633961!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c4b758d5c1b5%3A0x89b0802179c78bdf!2sDepartemen%20Ilmu%20Komputer%20FMIPA%20IPB!5e0!3m2!1sen!2sid!4v1684931234095!5m2!1sen!2sid" width="346" height="206" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
       </div>

@@ -67,48 +67,17 @@ Footer {
     line-height: 32px;
 }
 
-.input-email input {
-    font-family: 'EB Garamond';
-    color: #FFFFFF;
-    width: 499px;
-    height: 46px;
-    background-color: transparent;
-    margin: 17px 0 0 0;
-    border: 1px solid rgba(255, 255, 255, 0.5);
-}
-
-.input-email ::placeholder {
-    color: #FFFFFF;
-    padding-left: 21px;
-}
-
-.input-message input {
-    font-family: 'EB Garamond';
-    color: #FFFFFF;
-    width: 499px;
-    height: 117px;
-    background-color: transparent;
-    margin: 17px 0 0 0;
-    border: 1px solid rgba(255, 255, 255, 0.5);
-}
-
-.input-message ::placeholder {
-    color: #FFFFFF;
-    padding-left: 21px;
+.footer-map {
+    padding: 1.6rem 0 0 0;
 }
 
 .footer-copyright {
-    display: flex;
-    justify-content: center;
-    padding: 60px 0 0 0;
-}
-
-.footer-copyright p {
-    color: #FFFFFF;
+    text-align: center;
+    padding: 6rem 0 1.75rem 0;
     font-family: 'EB Garamond';
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 16px;
-    padding-bottom: 28px;
+    color: #FFFFFF;
 }

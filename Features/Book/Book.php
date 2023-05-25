@@ -29,36 +29,40 @@ $QueryID = mysqli_query($con, "SELECT * FROM user WHERE id = '$iduser'");
 </head>
 
 <body>
-  <!-- Navbar -->
-  <div class="container-navbar">
-    <div class="navbar-logo">
-      <img src="./../../Asset/Navbar Logo.svg" alt="Boekber">
-    </div>
-    <div class="navbar-list">
-      <a href="../../Features/Home/Home_after_login.php">
-        <li>Home</li>
-      </a>
-      <a href="../../Features/Book/Book.php">
-        <li>Book</li>
-      </a>
-      <a href="About.php">
-        <li>About</li>
-      </a>
+      <!-- Navbar -->
+      <div class="container-navbar">
+        <div class="navbar-logo">
+            <img src="./../../Asset/Navbar Logo.svg" alt="Boekber">
+        </div>
+        <div class="navbar-list">
+            <a href="../Home/Home_after_login.php">
+                <li>Home</li>
+            </a>
+            <a href="../../Features/Book/Book.php">
+                <li>Book</li>
+            </a>
+            <a href="../../Features/About/About.php">
+                <li>About</li>
+            </a>
+        </div>
+
+        <div class="navbar-profile">
+            <a href="../History/History.php">
+                <i class="fa-solid fa-clock-rotate-left"></i>
+            </a>
+            <div>
+                <a href="../Profile/Profile.php" class="profile-wrapper">
+                    <i class="fa-regular fa-user"></i>
+                    <?php
+                    while ($baris = mysqli_fetch_array($QueryID)) {
+                        echo "<h2> $baris[Username]</h2>";
+                    }
+                    ?>
+                </a>
+            </div>
+        </div>
     </div>
 
-    <div class="navbar-profile">
-      <div>
-        <a href="../Profile/Profile.php" class="profile-wrapper">
-          <img src="../../Asset//User Icon.svg" alt="Icon">
-          <?php
-          while ($baris = mysqli_fetch_array($QueryID)) {
-            echo "<h2> $baris[Username]</h2>";
-          }
-          ?>
-        </a>
-      </div>
-    </div>
-  </div>
 
 
   <section>
@@ -95,45 +99,43 @@ $QueryID = mysqli_query($con, "SELECT * FROM user WHERE id = '$iduser'");
   </section>
 
   <Footer>
-    <div class="footer">
-      <div class="footer-container-left">
-        <div class="footer-spotlight">
-          <div class="footer-header">
-            <h2>BOEKBER</h2>
-            <img src="../../Asset/Footer Line.svg" />
-          </div>
+        <div class="footer">
+            <div class="footer-container-left">
+                <div class="footer-spotlight">
+                    <div class="footer-header">
+                        <h2>BOEKBER</h2>
+                        <img src="../../Asset/Footer Line.svg" />
+                    </div>
 
-          <div class="footer-social">
-            <a href="#"><i class="fa-brands fa-facebook"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#"><i class="fa-brands fa-twitter"></i></a>
-            <a href="#"><i class="fa-brands fa-youtube"></i></a>
-          </div>
-        </div>
-        <div class="footer-address">
-          <p>
-            Kampus IPB, Jl. Raya Dramaga, Babakan, Kec. Dramaga,<br />
-            Kabupaten Bogor, Jawa Barat 16680
-          </p>
-        </div>
-      </div>
-      <div class="footer-container-right">
-        <h2>Feedback Form</h2>
-        <div class="input">
-          <div class="input-email">
-            <input type="text" placeholder="Email" />
-          </div>
-          <div class="input-message">
-            <input type="text" placeholder="Put Your Message" />
-          </div>
-        </div>
+                    <div class="footer-social">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-address">
+                    <p>
+                        Kampus IPB, Jl. Raya Dramaga, Babakan, Kec. Dramaga,<br />
+                        Kabupaten Bogor, Jawa Barat 16680
+                    </p>
+                </div>
+            </div>
+            <div class="footer-container-right">
+                <h2>Detail Alamat</h2>
+                <div class="footer-map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1341.9692905706263!2d106.73098484173013!3d-6.558171113633961!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c4b758d5c1b5%3A0x89b0802179c78bdf!2sDepartemen%20Ilmu%20Komputer%20FMIPA%20IPB!5e0!3m2!1sen!2sid!4v1684931234095!5m2!1sen!2sid"
+                        width="346" height="206" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
 
-      </div>
-    </div>
-    <div class="footer-copyright">
-      <p>copyright ©️ Kelompok 2 RPL 2</p>
-    </div>
-  </Footer>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>copyright ©️ Kelompok 2 RPL 2</p>
+        </div>
+    </Footer>
 
 </body>
 
