@@ -82,7 +82,7 @@ $QueryID = mysqli_query($con, "SELECT * FROM user WHERE id = '$iduser'");
                     echo '<div class="barber">';
                     //looping ambil data toko barber per ID
                     while ($Barber = mysqli_fetch_assoc($QueryBarber)) {
-                        echo '<img src="../../Asset/Barber-placeholder-pic.svg" alt="Barber Placeholder">';
+                        echo "<img src= 'getimg.php?id=" . $Barber['idBarber'] . "'>";
                         echo "<h2> $Barber[nama_barber]</h2>";
                         echo "<h3> $Barber[Service_Hour]</h2>";
                         echo "<h3> Rp.$Barber[Price]</h2>";

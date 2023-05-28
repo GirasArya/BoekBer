@@ -118,7 +118,6 @@ i {
     transform: translateX(-29rem);
 }
 
-
 .barber-container {
     display: flex;
     justify-content: center;
@@ -130,6 +129,13 @@ i {
     grid-template-columns: repeat(3, minmax(0, 1fr));
     grid-template-rows: repeat(1, minmax(0, 1fr));
     gap: 13rem;
+}
+
+.barber img{
+    width: 247px;
+    height: 252px;
+    border-radius: 10px;
+    object-fit: cover;
 }
 
 .barber h2 {

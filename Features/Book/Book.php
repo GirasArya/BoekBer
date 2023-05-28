@@ -79,7 +79,7 @@ $QueryID = mysqli_query($con, "SELECT * FROM user WHERE id = '$iduser'");
           echo '<div class="booking">';
           //looping ambil data toko barber per ID
           while ($Toko_Barber = mysqli_fetch_array($QueryStore)) {
-            echo    '<img src="../../Asset/Barber-Placeholder-pic.svg" alt="Barber Placeholder">';
+            echo "<img src= 'getimgbarbershop.php?id=" . $Toko_Barber['idToko'] . "'>";
             echo "<h2> $Toko_Barber[Nama_Toko]</h2>";
             echo "<h3> $Toko_Barber[Open_Days]</h2>";
             echo "<h3> $Toko_Barber[Service]</h2>";
