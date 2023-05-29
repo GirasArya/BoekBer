@@ -10,12 +10,12 @@
     <td>G6401211139</td>
   </tr>
   <tr>
-    <td>Naufal Fa'iq Ramadhani</td>
-    <td>G6401211023</td>
+    <td>Giras Arya Ichsani</td>
+    <td>G6401211047</td>
   </tr>
   <tr>
-    <td>Muhammad Rangga Rafif</td>
-    <td>G6401211086</td>
+    <td>Tan Bima Wiragama</td>
+    <td>G6401211085</td>
   </tr>
     
 </table>
